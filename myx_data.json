@@ -1,0 +1,436 @@
+{
+  "layout_fwd-women": {
+    "type": "layout",
+    "props": {
+      "hasSecondaryWidget": false,
+      "hasCustomApiWidget": false
+    },
+    "children": [
+      {
+        "type": "carousel",
+        "props": {
+          "variantName": ":default:",
+          "id": "b0f6bdc0-752b-11f1-96c3-e3143ba88897"
+        },
+        "children": [
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2026/JULY/1/RMBNzWir_3a38144c178948009251f90530d287e6.png",
+              "url": "https://www.myntra.com/fwdgenzcollection?rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0%3A%3APrice%3A0.0_1500.0_0.0%20TO%201500.0&storeContext=fwd",
+              "ratio": "1920*504",
+              "id": "b0f6bdc1-752b-11f1-96c3-e3143ba88897"
+            }
+          },
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/15/aEqIXcxR_25d6bdf1158c41e2bcf03b171ba591c5.png",
+              "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ADresses%3A%3AGender%3Amen%20women%2Cwomen&rf=Price%3A00.0_600.0_00.0%20TO%20600.0&storeContext=fwd",
+              "ratio": "1920*504",
+              "id": "bed64411-a9c5-11f0-b334-fd896b038734"
+            }
+          },
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/15/MxWhMgAV_d0a4b2da573f4908a110fe91f51fca4b.png",
+              "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AShirts%3A%3AGender%3Amen%2Cmen%20women&rf=Price%3A00.0_600.0_00.0%20TO%20600.0&storeContext=fwd",
+              "ratio": "1920*504",
+              "id": "d14cad00-a9c5-11f0-b042-f997dfec444b"
+            }
+          },
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/15/Mmvh5ptn_07c16f04b94f4778add31ecfece4ebf7.png",
+              "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AAccessory%20Gift%20Set%2CBackpacks%2CBelts%2CCaps%2CClutches%2CDuffel%20Bag%2CHair%20Accessory%2CHandbags%2CHat%2CHeadband%2CLaptop%20Bag%2CMessenger%20Bag%2CRucksacks%2CSaree%20Accessories%2CScarves%2CSports%20Accessories%2CSunglasses%2CTravel%20Accessory%2CWallets%2CWatch%20Gift%20Set%2CWatches&rf=Discount%20Range%3A60.0_100.0_60.0%20TO%20100.0%3A%3APrice%3A0.0_1500.0_0.0%20TO%201500.0&storeContext=fwd",
+              "ratio": "1920*504",
+              "id": "e6dc63e0-a9c5-11f0-b19d-af1ea830bf19"
+            }
+          },
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/15/akinftiU_2d56988e04c34a3bb2bd4d7d25478d37.png",
+              "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ADress%20Material%2CEthnic%20Dresses%2CKurta%20Sets%2CKurtas%2CKurtis%2CPalazzos%2CSarees&rf=Price%3A00.0_700.0_00.0%20TO%20700.0&storeContext=fwd",
+              "ratio": "1920*504",
+              "id": "f91b9030-a9c5-11f0-a47c-07b8d2f344e3"
+            }
+          },
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/15/UjFBCkVq_3e91c84dfed64ded8b161c301645e79e.png",
+              "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AJeans%2CTrousers&rf=Price%3A00.0_600.0_00.0%20TO%20600.0&storeContext=fwd",
+              "ratio": "1920*504",
+              "id": "0fe65f20-a9c6-11f0-a161-1be1f9610022"
+            }
+          },
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/15/z1crCP1q_fed91e2cd872455da1d52b9838d56afa.png",
+              "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ATops%2CTshirts&rf=Price%3A0.0_300.0_0.0%20TO%20300.0&storeContext=fwd",
+              "ratio": "1920*504",
+              "id": "25fb4b91-a9c6-11f0-b19d-af1ea830bf19"
+            }
+          },
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/15/cpJvSKVf_d61645d7443d491e93478d973fc2f8b6.png",
+              "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ABoots%2CCasual%20Shoes%2CFlats%2CFlip%20Flops%2CFormal%20Shoes%2CHeels%2CSports%20Shoes&rf=Discount%20Range%3A60.0_100.0_60.0%20TO%20100.0%3A%3APrice%3A00.0_1000.0_00.0%20TO%201000.0&storeContext=fwd",
+              "ratio": "1920*504",
+              "id": "3a7b6730-a9c6-11f0-bb54-c382ca269644"
+            }
+          }
+        ]
+      },
+      {
+        "type": "container",
+        "props": {
+          "variantName": ":default:",
+          "id": "5f9edc20-8187-11f0-bdff-65b77a6981ae"
+        },
+        "children": [
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2025/AUGUST/25/P6zD7j1z_f8a4c9305474464b9d6f9bb0bc628270.png",
+              "url": "https://www.myntra.com/myntra?f=Coupons%3AFWDNEW200_117332&rf=Price%3A0.0_1000.0_0.0%20TO%201000.0&sort=Customer%20Rating",
+              "ratio": "960*200",
+              "id": "5f9edc21-8187-11f0-bdff-65b77a6981ae"
+            }
+          },
+          {
+            "type": "banner",
+            "props": {
+              "src": "https://assets.myntassets.com/assets/images/2024/9/30/a5d38292-c9b1-48cf-b5f5-5c9425a590761727694224635-1.jpg",
+              "url": "https://myntra.onelink.me/eWcy/n1lou79q",
+              "ratio": "960*200",
+              "id": "dd3fb880-7f1b-11ef-8854-458c27be74e6"
+            }
+          }
+        ]
+      },
+      {
+        "type": "textBanner",
+        "props": {
+          "title": "Biggest Deals On Top Drips",
+          "variantName": ":default:",
+          "id": "3caee920-7bf3-11ef-8854-458c27be74e6"
+        }
+      },
+      {
+        "type": "container",
+        "props": {
+          "paddingRight": "30",
+          "paddingLeft": "60",
+          "variantName": ":default:",
+          "id": "97458190-a8e4-11f0-bb54-c382ca269644"
+        },
+        "children": [
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "ed72ed60-a8e3-11f0-a161-1be1f9610022"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/F8MxKVPK_338a0b7a1d974515bc2a17358bdd5bb0.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AWatches%3A%3ADisplay%3AAnalogue%3A%3AGender%3Amen%2Cmen%20women&rf=Price%3A0.0_400.0_0.0%20TO%20400.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "ed731470-a8e3-11f0-a161-1be1f9610022"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "1924b010-a8e4-11f0-b334-fd896b038734"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/8WEvkqR3_3c0f4520bd374e878e010e46a48dda11.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AJeans%3A%3AFit%3ABaggy%3A%3AGender%3Amen%2Cmen%20women&rf=Price%3A00.0_800.0_00.0%20TO%20800.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "1924d720-a8e4-11f0-b334-fd896b038734"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "42984290-a8e4-11f0-a47c-07b8d2f344e3"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/PrKrxMQ0_61f9682563464443bdcbba636b600c6d.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AHeels%3A%3AGender%3Amen%20women%2Cwomen%3A%3AHeel%20Type%3ABlock&rf=Price%3A00.0_700.0_00.0%20TO%20700.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "42984291-a8e4-11f0-a47c-07b8d2f344e3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "69571550-a8e4-11f0-b19d-af1ea830bf19"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/tiTulCRM_60e1001495144a18a5ec832a4273e974.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ATrousers%3A%3AGender%3Amen%20women%2Cwomen%3A%3AType%3ACargos&rf=Price%3A00.0_800.0_00.0%20TO%20800.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "69571551-a8e4-11f0-b19d-af1ea830bf19"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "9745a8a0-a8e4-11f0-bb54-c382ca269644"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/TPmXcxMJ_f9a6ec16d97a41fe975e48b990e48a1c.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ASweatshirts%3A%3AGender%3Amen%20women%2Cwomen%3A%3ALength%3ACrop&rf=Price%3A00.0_800.0_00.0%20TO%20800.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "9745a8a1-a8e4-11f0-bb54-c382ca269644"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "container",
+        "props": {
+          "paddingRight": "30",
+          "paddingLeft": "60",
+          "paddingTop": "20",
+          "variantName": ":default:",
+          "id": "66fe62d0-a8e5-11f0-b19d-af1ea830bf19"
+        },
+        "children": [
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "bb5a9110-a8e4-11f0-b042-f997dfec444b"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/2PrEdt1t_888935f77cc04658bd0a30f29dd808d4.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ATops%3A%3AGender%3Amen%20women%2Cwomen%3A%3ALength%3ACrop&rf=Price%3A00.0_300.0_00.0%20TO%20300.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "bb5a9111-a8e4-11f0-b042-f997dfec444b"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "e23bb8e0-a8e4-11f0-a47c-07b8d2f344e3"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/sohVGYiQ_9a9161478d7e4cacb3a6b831c01dd2fa.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AJackets%3A%3AGender%3Amen%20women%2Cwomen%3A%3AType%3ADenim%20Jacket&rf=Price%3A00.0_1000.0_00.0%20TO%201000.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "e23bb8e1-a8e4-11f0-a47c-07b8d2f344e3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "0df14c20-a8e5-11f0-bf3c-991f6e208067"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/m0kBqHyr_467ddd19de2249498fe6bc8cea308dc8.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ADresses%3A%3AGender%3Amen%20women%2Cwomen%3A%3AShape%3AFit%20and%20Flare&rf=Price%3A00.0_600.0_00.0%20TO%20600.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "0df14c21-a8e5-11f0-bf3c-991f6e208067"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "3a66acf0-a8e5-11f0-b19d-af1ea830bf19"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/yBvCoIHJ_461000047ab4459aaa967229075f4bae.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AAnklet%2CBangle%2CBracelet%2CEarrings%2CHead%20Jewellery%2CJewellery%20Set%2CMangalsutra%2CNecklace%20and%20Chains%2CNosepin%2CPendant%2CRing%2CToe%20Rings%3A%3AGender%3Amen%20women%2Cwomen%3A%3APlating%3AGold-Plated&rf=Price%3A0.0_300.0_0.0%20TO%20300.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "3a66acf1-a8e5-11f0-b19d-af1ea830bf19"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "66feb0f0-a8e5-11f0-b19d-af1ea830bf19"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/asloP3vU_2a199d3c0bae40bf98d78cf64979f725.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ASkirts%3A%3AGender%3Amen%20women%2Cwomen%3A%3ALength%3AMini&rf=Price%3A00.0_600.0_00.0%20TO%20600.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "66fed800-a8e5-11f0-b19d-af1ea830bf19"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "container",
+        "props": {
+          "paddingRight": "30",
+          "paddingLeft": "60",
+          "paddingTop": "20",
+          "variantName": ":default:",
+          "id": "5ebf8d20-a8ee-11f0-b042-f997dfec444b"
+        },
+        "children": [
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "5ebfb430-a8ee-11f0-b042-f997dfec444b"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/SlgEEysk_4037a4ede2124282aa761d3f89f9f512.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ATshirts%3A%3AFit%3AOversized%3A%3AGender%3Amen%2Cmen%20women&rf=Price%3A00.0_300.0_00.0%20TO%20300.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "5ebfb431-a8ee-11f0-b042-f997dfec444b"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "5ebfb432-a8ee-11f0-b042-f997dfec444b"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/jaw2RZ6j_52a1ab6a82c1414094828e289925cba7.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AShirts%3A%3AGender%3Amen%2Cmen%20women%3A%3ATheme%3AResort&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "5ebfb433-a8ee-11f0-b042-f997dfec444b"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "5ebfdb40-a8ee-11f0-b042-f997dfec444b"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/d3JRSKTl_2e64aa2e6e084a7abdb05183c7618860.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AKurtis%3A%3AGender%3Amen%20women%2Cwomen&rf=Price%3A00.0_300.0_00.0%20TO%20300.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "5ebfdb41-a8ee-11f0-b042-f997dfec444b"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "5ebfdb42-a8ee-11f0-b042-f997dfec444b"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/8WqltwfN_149fcbc00ee94c6bb7f5e07d176bc39d.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3AHandbags%3A%3AGender%3Amen%20women%2Cwomen%3A%3AType%3ASling%20Bag&rf=Price%3A0.0_500.0_0.0%20TO%20500.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "5ebfdb43-a8ee-11f0-b042-f997dfec444b"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "props": {
+              "paddingRight": "30",
+              "id": "5ec00250-a8ee-11f0-b042-f997dfec444b"
+            },
+            "children": [
+              {
+                "type": "banner",
+                "props": {
+                  "src": "https://assets.myntassets.com/assets/images/2025/OCTOBER/14/CpuLXb7v_142364fbb26a4a578255002b9bd93a79.png",
+                  "url": "https://www.myntra.com/fwdgenzcollection?f=Categories%3ACasual%20Shoes%3A%3AColor%3AWhite_f2f2f2%3A%3AGender%3Amen%2Cmen%20women%3A%3AType%3ASneakers&rf=Price%3A00.0_900.0_00.0%20TO%20900.0&storeContext=fwd",
+                  "ratio": "568*788",
+                  "id": "5ec00251-a8ee-11f0-b042-f997dfec444b"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pageName": "Landing Page",
+  "countryCode": "",
+  "dataExpired": false,
+  "directLoad": true
+}

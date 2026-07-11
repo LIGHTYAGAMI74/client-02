@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Pastel Floral Sundress",
+    "category": "Dresses & Co-ords",
+    "price": "₹1,299",
+    "originalPrice": "₹2,499",
+    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.myntra.com/dresses",
+    "tag": "Trending 💖",
+    "description": "A breezy, romantic dress with delicate floral prints. Perfect for sunny dates!"
+  },
+  {
+    "id": 2,
+    "title": "Lilac Knit Co-ord Set",
+    "category": "Dresses & Co-ords",
+    "price": "₹1,899",
+    "originalPrice": "₹3,299",
+    "image": "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.urbanic.com",
+    "tag": "Must Have ✨",
+    "description": "Super comfy and chic lilac top with matching skirt. Elegant yet playful."
+  },
+  {
+    "id": 3,
+    "title": "Satin Lace Corset Top",
+    "category": "Cute Tops & Corsets",
+    "price": "₹899",
+    "originalPrice": "₹1,599",
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.savana.com",
+    "tag": "Bestseller 🔥",
+    "description": "A stunning satin corset with delicate lace-up back detail. Accentuate your beautiful silhouette!"
+  },
+  {
+    "id": 4,
+    "title": "Sweetheart Ribbon Crop Top",
+    "category": "Cute Tops & Corsets",
+    "price": "₹699",
+    "originalPrice": "₹1,199",
+    "image": "https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.westside.com",
+    "tag": "So Cute! 🌸",
+    "description": "Features a cute front bow and soft rib-knit fabric. Looks adorable with high-waisted jeans."
+  },
+  {
+    "id": 5,
+    "title": "Aesthetic Oversized Butterfly Tee",
+    "category": "Aesthetic Streetwear & Tees",
+    "price": "₹599",
+    "originalPrice": "₹999",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.myntra.com/tshirts",
+    "tag": "Chill Vibe 🦋",
+    "description": "Heavyweight cotton tee with a cool butterfly back-print. Comfort-first fashion."
+  },
+  {
+    "id": 6,
+    "title": "Retro Vintage Washed Tee",
+    "category": "Aesthetic Streetwear & Tees",
+    "price": "₹649",
+    "originalPrice": "₹1,299",
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.savana.com",
+    "tag": "Street Style 🛹",
+    "description": "Grunge-inspired graphic print on pre-shrunk washed charcoal cotton."
+  },
+  {
+    "id": 7,
+    "title": "Cloud-Soft Knitted Cardigan",
+    "category": "Cozy Hoodies & Cardigans",
+    "price": "₹1,499",
+    "originalPrice": "₹2,799",
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.myntra.com/sweaters",
+    "tag": "Snuggle Alert ☁️",
+    "description": "Butter-soft pastel pink cardigan with cute statement buttons. Keeps you cozy and stylish."
+  },
+  {
+    "id": 8,
+    "title": "Strawberry Milkshake Hoodie",
+    "category": "Cozy Hoodies & Cardigans",
+    "price": "₹1,199",
+    "originalPrice": "₹1,999",
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.urbanic.com",
+    "tag": "Aesthetic Star ⭐",
+    "description": "Fleece-lined pastel pink hoodie featuring cute minimal embroidery. Ultimate boyfriend-style comfort."
+  }
+]
