@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ShoppingBag, ArrowUpRight, MessageCircleHeart, Heart, HeartOff, Trash2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
-export default function ClosetCard({ item, isSaved, onPin, onUnpin, isFromSavedBoard }) {
+export default function ClosetCard({ item, isSaved, onPin, onUnpin, isFromSavedBoard, onPreview }) {
   
   const handleAskToBuy = () => {
     // 1. Trigger Confetti
@@ -32,7 +32,11 @@ export default function ClosetCard({ item, isSaved, onPin, onUnpin, isFromSavedB
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       whileHover={{ y: -8 }}
-      className="bg-white rounded-2xl border border-secondary/35 shadow-sm overflow-hidden flex flex-col justify-between group transition-shadow duration-300 hover:shadow-lg relative"
+      className={`bg-white rounded-2xl border ${
+        item.tag?.includes('Best Pick') 
+          ? 'border-amber-400/95 ring-1 ring-amber-400/20 bg-gradient-to-b from-amber-50/10 to-white shadow-sm' 
+          : 'border-secondary/35'
+      } shadow-sm overflow-hidden flex flex-col justify-between group transition-shadow duration-300 hover:shadow-lg relative`}
     >
       {/* Floating Pinterest Heart Pin */}
       <button
@@ -68,12 +72,19 @@ export default function ClosetCard({ item, isSaved, onPin, onUnpin, isFromSavedB
         <img
           src={item.image}
           alt={item.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          onClick={() => onPreview && onPreview(item)}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer"
           loading="lazy"
         />
 
         {/* Hover backdrop overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-dark-red/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+        <div 
+          onClick={() => onPreview && onPreview(item)}
+          className="absolute inset-0 bg-gradient-to-t from-dark-red/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4 cursor-pointer"
+        >
+          <span className="self-end bg-white/20 backdrop-blur-md text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full border border-white/20 hover:bg-white/35 transition-colors">
+            👗 Preview Inside
+          </span>
           <p className="text-white text-xs font-medium leading-relaxed drop-shadow-sm">
             {item.description}
           </p>
@@ -85,7 +96,10 @@ export default function ClosetCard({ item, isSaved, onPin, onUnpin, isFromSavedB
           <span className="text-[10px] font-bold tracking-wider uppercase text-dark-red/50 block mb-1">
             {item.category}
           </span>
-          <h3 className="font-romantic font-bold text-base text-dark-red line-clamp-1 mb-2">
+          <h3 
+            onClick={() => onPreview && onPreview(item)}
+            className="font-romantic font-bold text-base text-dark-red line-clamp-1 mb-2 hover:text-primary cursor-pointer transition-colors"
+          >
             {item.title}
           </h3>
           <div className="flex items-baseline gap-2 mb-4">

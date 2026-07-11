@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, Search, Pin, Sparkles, ShoppingBag, Loader, RefreshCw, ArrowRight } from 'lucide-react';
 import ClosetCard from './ClosetCard';
+import ProductPreviewModal from './ProductPreviewModal';
 import closetData from '../data/closetData.json';
 import confetti from 'canvas-confetti';
 
@@ -24,6 +25,9 @@ const SUGGESTION_TAGS = [
 export default function ClosetSection() {
   const [activeTab, setActiveTab] = useState('curated'); // 'curated' | 'search' | 'live' | 'saved'
   const [selectedCategory, setSelectedCategory] = useState('All Wardrobe');
+  
+  // Product Preview Modal State
+  const [previewItem, setPreviewItem] = useState(null);
   
   // Search States
   const [searchQuery, setSearchQuery] = useState('');
@@ -295,6 +299,7 @@ export default function ClosetSection() {
                       isSaved={isPinned(item)}
                       onPin={handlePin}
                       onUnpin={handleUnpin}
+                      onPreview={(itm) => setPreviewItem(itm)}
                     />
                   </motion.div>
                 ))}
@@ -366,6 +371,7 @@ export default function ClosetSection() {
                         isSaved={isPinned(item)}
                         onPin={handlePin}
                         onUnpin={handleUnpin}
+                        onPreview={(itm) => setPreviewItem(itm)}
                       />
                     </motion.div>
                   ))}
@@ -425,6 +431,7 @@ export default function ClosetSection() {
                           isSaved={isPinned(item)}
                           onPin={handlePin}
                           onUnpin={handleUnpin}
+                          onPreview={(itm) => setPreviewItem(itm)}
                         />
                       </motion.div>
                     ))}
@@ -517,6 +524,7 @@ export default function ClosetSection() {
                           onPin={handlePin}
                           onUnpin={handleUnpin}
                           isFromSavedBoard={true}
+                          onPreview={(itm) => setPreviewItem(itm)}
                         />
                       </motion.div>
                     ))}
@@ -526,6 +534,16 @@ export default function ClosetSection() {
             )}
           </div>
         )}
+
+        {/* Product Preview Modal */}
+        <ProductPreviewModal
+          item={previewItem}
+          isOpen={previewItem !== null}
+          onClose={() => setPreviewItem(null)}
+          isSaved={previewItem ? isPinned(previewItem) : false}
+          onPin={handlePin}
+          onUnpin={handleUnpin}
+        />
 
       </div>
     </section>

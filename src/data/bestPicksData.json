@@ -1,0 +1,178 @@
+[
+  {
+    "id": "bp-1",
+    "title": "Chic Floral Satin Midi Dress",
+    "category": "Dresses & Co-ords",
+    "price": "₹1,499",
+    "originalPrice": "₹2,999",
+    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.myntra.com/dresses/kvs+fab/kvs-fab-women-floral-printed-georgette-a-line-midi-dress/28079550/buy",
+    "tag": "Best Pick ⭐",
+    "description": "Breezy romantic floral dress in georgette with a gorgeous drape. Perfect for day outings."
+  },
+  {
+    "id": "bp-2",
+    "title": "Lilac Ruched Bodycon Dress",
+    "category": "Dresses & Co-ords",
+    "price": "₹1,899",
+    "originalPrice": "₹3,499",
+    "image": "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.flipkart.com/tokyo-talkies-women-bodycon-dress/p/itm217a9cfa24bdf",
+    "tag": "Trending 💖",
+    "description": "Super flattering lilac bodycon dress featuring delicate side ruches and soft stretchy knit fabric."
+  },
+  {
+    "id": "bp-3",
+    "title": "Satin Lace-up Corset Top",
+    "category": "Cute Tops & Corsets",
+    "price": "₹999",
+    "originalPrice": "₹1,799",
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.savana.com/product/satin-lace-corset-top-72901",
+    "tag": "Best Seller 🔥",
+    "description": "Premium satin corset top with support structure and an adjustable romantic lace-up back."
+  },
+  {
+    "id": "bp-4",
+    "title": "Sweetheart Ribbon Crop Top",
+    "category": "Cute Tops & Corsets",
+    "price": "₹799",
+    "originalPrice": "₹1,299",
+    "image": "https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.westside.com/collections/women-sweetheart-rib-crop-top-098",
+    "tag": "Cute Vibe 🎀",
+    "description": "Aesthetic crop top with a sweetheart neckline and statement front bow. Looks lovely with denims."
+  },
+  {
+    "id": "bp-5",
+    "title": "Aesthetic Butterfly Oversized Tee",
+    "category": "Aesthetic Streetwear & Tees",
+    "price": "₹699",
+    "originalPrice": "₹1,199",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.myntra.com/tshirts/genz/butterfly-heavyweight-graphic-tee/2910384/buy",
+    "tag": "Viral GenZ ⚡",
+    "description": "Heavyweight premium cotton drop-shoulder graphic tee featuring a dreamy pastel butterfly print."
+  },
+  {
+    "id": "bp-6",
+    "title": "Retro Washed Charcoal Tee",
+    "category": "Aesthetic Streetwear & Tees",
+    "price": "₹749",
+    "originalPrice": "₹1,499",
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.savana.com/product/retro-vintage-washed-charcoal-tee-283",
+    "tag": "Street Drip 🛹",
+    "description": "Thick premium cotton t-shirt with a pre-washed vintage grunge look and skate-aesthetic print."
+  },
+  {
+    "id": "bp-7",
+    "title": "Cloud-Soft Pastel Pink Cardigan",
+    "category": "Cozy Hoodies & Cardigans",
+    "price": "₹1,599",
+    "originalPrice": "₹2,999",
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.myntra.com/sweaters/lifestyle/cloud-knitted-pink-cardigan/1928374/buy",
+    "tag": "Cozy Alert ☁️",
+    "description": "Butter-soft knitted cardigan featuring pastel tones and cute statement heart buttons."
+  },
+  {
+    "id": "bp-8",
+    "title": "Strawberry Milkshake Fleece Hoodie",
+    "category": "Cozy Hoodies & Cardigans",
+    "price": "₹1,299",
+    "originalPrice": "₹2,199",
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.urbanic.com/product/strawberry-milkshake-fleece-hoodie-981",
+    "tag": "Comfy Fit ⭐",
+    "description": "Super soft fleece-lined hoodie in a gorgeous pastel strawberry shade. Cozy boy-friend style."
+  },
+  {
+    "id": "bp-9",
+    "title": "Emerald Green Velvet Slip Dress",
+    "category": "Dresses & Co-ords",
+    "price": "₹2,199",
+    "originalPrice": "₹3,999",
+    "image": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.ajio.com/dresses/velvet-emerald-slip-gown-90182",
+    "tag": "Date Night 🌹",
+    "description": "Stunning emerald slip dress crafted in premium lush velvet. Features a subtle side slit."
+  },
+  {
+    "id": "bp-10",
+    "title": "Aesthetic Corset Puff-Sleeve Top",
+    "category": "Cute Tops & Corsets",
+    "price": "₹1,199",
+    "originalPrice": "₹1,999",
+    "image": "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.savana.com/product/puff-sleeve-corset-top-198",
+    "tag": "Bestseller 🔥",
+    "description": "Romantic milkmaid corset top with sweet puff sleeves and a structured canvas bustier."
+  },
+  {
+    "id": "bp-11",
+    "title": "Loose Fit Wide-Leg Denim Cargos",
+    "category": "Aesthetic Streetwear & Tees",
+    "price": "₹1,699",
+    "originalPrice": "₹2,999",
+    "image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.myntra.com/trousers/streetwear/baggy-denim-cargo-jeans/291837/buy",
+    "tag": "Best Pick ⭐",
+    "description": "High-waisted relaxed cargos with multi-pocket detailing. Authentic utility streetwear style."
+  },
+  {
+    "id": "bp-12",
+    "title": "Aesthetic Oversized Lavender Knit",
+    "category": "Cozy Hoodies & Cardigans",
+    "price": "₹1,799",
+    "originalPrice": "₹3,299",
+    "image": "https://images.unsplash.com/photo-1609505848912-b7c3bc8b3d04?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.ajio.com/sweaters/oversized-knitwear-lavender-0182",
+    "tag": "Trending 💖",
+    "description": "Chunky waffle knit sweater in pastel lavender. Breathable yet cozy for casual layering."
+  },
+  {
+    "id": "bp-13",
+    "title": "Aesthetic Pastel Floral Slit Skirt",
+    "category": "Dresses & Co-ords",
+    "price": "₹1,099",
+    "originalPrice": "₹1,899",
+    "image": "https://images.unsplash.com/photo-1625793899532-6019553755c3?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.myntra.com/skirts/kvs-fab/women-floral-slit-midi-skirt/2890183/buy",
+    "tag": "French Vibe 🌸",
+    "description": "Flowy midi skirt featuring a pastel floral print and side-slit detail. Perfect summer skirt."
+  },
+  {
+    "id": "bp-14",
+    "title": "Ruched Mesh Halter Top",
+    "category": "Cute Tops & Corsets",
+    "price": "₹899",
+    "originalPrice": "₹1,499",
+    "image": "https://images.unsplash.com/photo-1617922001439-4a2e65e2f62a?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.savana.com/product/mesh-halter-crop-top-122",
+    "tag": "Viral Pick ✨",
+    "description": "Double-layered mesh halter top with adjustable ruched drawstring details. Fun party wear."
+  },
+  {
+    "id": "bp-15",
+    "title": "Grunge Aesthetic Cargo Joggers",
+    "category": "Aesthetic Streetwear & Tees",
+    "price": "₹1,399",
+    "originalPrice": "₹2,499",
+    "image": "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.westside.com/collections/women-pants-cargo-joggers-981",
+    "tag": "Casual Chill 🛹",
+    "description": "Comfy heavy loopback cotton cargo joggers with elasticated waistband and ankle ties."
+  },
+  {
+    "id": "bp-16",
+    "title": "Aesthetic Star Cozy Hoodie",
+    "category": "Cozy Hoodies & Cardigans",
+    "price": "₹1,499",
+    "originalPrice": "₹2,799",
+    "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&q=80&w=600",
+    "shopUrl": "https://www.myntra.com/hoodies/lifestyle/aesthetic-star-embroidery-hoodie/182739/buy",
+    "tag": "Best Pick ⭐",
+    "description": "Fleece-lined hoodie with star patch embroideries on the sleeves. A viral Gen-Z fashion statement."
+  }
+]

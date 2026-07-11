@@ -51,6 +51,17 @@ try {
   console.error("Failed to load unsplashPool.json, using fallback images.", e);
 }
 
+// Load Best Picks Data
+let bestPicksData = [];
+try {
+  const bestPicksPath = path.join(process.cwd(), 'src', 'data', 'bestPicksData.json');
+  if (fs.existsSync(bestPicksPath)) {
+    bestPicksData = JSON.parse(fs.readFileSync(bestPicksPath, 'utf8'));
+  }
+} catch (e) {
+  console.error("Failed to load bestPicksData.json:", e);
+}
+
 const getAestheticImage = (title) => {
   const t = title.toLowerCase();
   let list = unsplashPool.default;
@@ -233,6 +244,224 @@ app.get('/api/search-clothes', async (req, res) => {
   }
 });
 
+// Helper functions for scraping & fallbacks
+const detectBrand = (url) => {
+  if (url.includes('myntra.com')) return 'Myntra FWD';
+  if (url.includes('flipkart.com')) return 'Flipkart Style';
+  if (url.includes('savana.com')) return 'Savana';
+  if (url.includes('ajio.com')) return 'Ajio';
+  if (url.includes('westside.com')) return 'Westside';
+  if (url.includes('urbanic.com')) return 'Urbanic';
+  return 'E-Commerce Store';
+};
+
+const cleanText = (text) => {
+  if (!text) return '';
+  return text
+    .replace(/Online Shopping.*/i, '')
+    .replace(/Online at Best Price.*/i, '')
+    .replace(/ \|.*/, '')
+    .replace(/ - Myntra$/i, '')
+    .replace(/ - Savana$/i, '')
+    .replace(/ - Flipkart$/i, '')
+    .replace(/ - Ajio$/i, '')
+    .replace(/ - Westside$/i, '')
+    .replace(/ - URBANIC$/i, '')
+    .trim();
+};
+
+const fallbackUrlParser = (url) => {
+  const brand = detectBrand(url);
+  let title = 'Chic Fashion Outfit';
+  let category = 'Dresses & Co-ords';
+
+  try {
+    const urlObj = new URL(url);
+    const pathname = urlObj.pathname;
+    const segments = pathname.split('/');
+    
+    let descriptiveSegment = '';
+    if (url.includes('myntra.com')) {
+      const buyIdx = segments.indexOf('buy');
+      if (buyIdx > 1) {
+        descriptiveSegment = segments[buyIdx - 2] || segments[buyIdx - 1];
+      } else {
+        descriptiveSegment = segments[3] || segments[2] || '';
+      }
+    } else if (url.includes('flipkart.com')) {
+      descriptiveSegment = segments[1] || '';
+    } else {
+      descriptiveSegment = segments[2] || segments[1] || '';
+    }
+
+    if (descriptiveSegment) {
+      title = descriptiveSegment
+        .replace(/[+-]/g, ' ')
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+      
+      title = title
+        .replace(/Buy\s+/gi, '')
+        .replace(/\s+Online$/gi, '')
+        .replace(/\s+At\s+Best\s+Price.*/gi, '');
+      
+      if (title.length < 5) title = 'Chic Fashion Pick';
+    }
+
+    const lowerTitle = title.toLowerCase();
+    const lowerUrl = url.toLowerCase();
+    
+    if (lowerTitle.includes('top') || lowerTitle.includes('corset') || lowerTitle.includes('shirt') || lowerTitle.includes('tee') || lowerUrl.includes('top') || lowerUrl.includes('shirt') || lowerUrl.includes('tee')) {
+      category = 'Cute Tops & Corsets';
+    } else if (lowerTitle.includes('hoodie') || lowerTitle.includes('sweater') || lowerTitle.includes('cardigan') || lowerUrl.includes('hoodie') || lowerUrl.includes('sweater') || lowerUrl.includes('cardigan')) {
+      category = 'Cozy Hoodies & Cardigans';
+    } else if (lowerTitle.includes('street') || lowerTitle.includes('cargo') || lowerTitle.includes('jeans') || lowerUrl.includes('street') || lowerUrl.includes('cargo') || lowerUrl.includes('jeans') || lowerTitle.includes('pants') || lowerTitle.includes('skirt')) {
+      category = 'Aesthetic Streetwear & Tees';
+    }
+  } catch (e) {}
+
+  let priceBase = 899;
+  if (category === 'Dresses & Co-ords') priceBase = 1299;
+  if (category === 'Cozy Hoodies & Cardigans') priceBase = 1499;
+  if (brand.includes('Myntra') || brand.includes('Ajio')) priceBase += 200;
+  if (brand.includes('Savana')) priceBase -= 100;
+  
+  const seed = title.length;
+  const priceNum = priceBase + (seed % 5) * 100;
+  const originalPriceNum = Math.floor(priceNum * 1.6);
+
+  return {
+    title: title.length > 50 ? title.substring(0, 50) + '...' : title,
+    category,
+    brand,
+    price: `₹${priceNum}`,
+    originalPrice: `₹${originalPriceNum}`,
+    description: `A stunning selection from ${brand}. This item features premium quality, chic details, and fits perfectly into Vaibhavi's aesthetic style.`,
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    rating: (4.4 + (seed % 6) * 0.1).toFixed(1),
+    reviewsCount: 30 + (seed % 15) * 8
+  };
+};
+
+// GET Live Product Preview Scraper & Details Parser
+app.get('/api/scrape-product', async (req, res) => {
+  const { url } = req.query;
+  if (!url) {
+    return res.status(400).json({ error: 'URL parameter is required' });
+  }
+
+  try {
+    const response = await axios.get(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+      },
+      timeout: 5000
+    });
+
+    const $ = cheerio.load(response.data);
+    
+    const ogTitle = $('meta[property="og:title"]').attr('content') || $('meta[name="twitter:title"]').attr('content') || $('title').text();
+    const ogImage = $('meta[property="og:image"]').attr('content') || $('meta[name="twitter:image"]').attr('content');
+    const ogDesc = $('meta[property="og:description"]').attr('content') || $('meta[name="twitter:description"]').attr('content') || '';
+    const ogBrand = $('meta[property="product:brand"]').attr('content') || $('meta[name="brand"]').attr('content') || $('meta[property="og:site_name"]').attr('content');
+    
+    let price = $('meta[property="product:price:amount"]').attr('content') || $('meta[property="og:price:amount"]').attr('content');
+    
+    let jsonLdProduct = null;
+    $('script[type="application/ld+json"]').each((i, el) => {
+      try {
+        const data = JSON.parse($(el).text().trim());
+        const searchProduct = (obj) => {
+          if (!obj) return;
+          if (obj['@type'] === 'Product') {
+            jsonLdProduct = obj;
+            return;
+          }
+          if (Array.isArray(obj)) {
+            for (const item of obj) searchProduct(item);
+          } else if (typeof obj === 'object') {
+            if (obj['@graph']) searchProduct(obj['@graph']);
+            for (const key in obj) {
+              if (typeof obj[key] === 'object') searchProduct(obj[key]);
+            }
+          }
+        };
+        searchProduct(data);
+      } catch (e) {}
+    });
+
+    let images = [];
+    if (ogImage) images.push(ogImage);
+
+    let title = ogTitle;
+    let description = ogDesc;
+    let brand = ogBrand;
+
+    if (jsonLdProduct) {
+      title = jsonLdProduct.name || title;
+      description = jsonLdProduct.description || description;
+      if (jsonLdProduct.brand) {
+        brand = typeof jsonLdProduct.brand === 'object' ? jsonLdProduct.brand.name : jsonLdProduct.brand;
+      }
+      if (jsonLdProduct.image) {
+        if (Array.isArray(jsonLdProduct.image)) {
+          images = [...new Set([...images, ...jsonLdProduct.image])];
+        } else if (typeof jsonLdProduct.image === 'string') {
+          images.push(jsonLdProduct.image);
+        } else if (typeof jsonLdProduct.image === 'object' && jsonLdProduct.image.url) {
+          images.push(jsonLdProduct.image.url);
+        }
+      }
+      if (jsonLdProduct.offers) {
+        const offers = jsonLdProduct.offers;
+        if (offers.price) {
+          price = offers.price;
+        } else if (Array.isArray(offers) && offers[0] && offers[0].price) {
+          price = offers[0].price;
+        } else if (offers.lowPrice) {
+          price = offers.lowPrice;
+        }
+      }
+    }
+
+    let cleanPrice = price ? `₹${price}` : null;
+    images = [...new Set(images)].filter(img => img && img.startsWith('http'));
+
+    const isBlocked = !title || title.includes('Access Denied') || title.includes('Robot') || title.includes('CAPTCHA') || response.status === 403;
+
+    if (isBlocked) {
+      throw new Error('Blocked or page template invalid');
+    }
+
+    res.json({
+      success: true,
+      title: cleanText(title),
+      description: cleanText(description) || 'A beautiful fashion piece perfect for your look.',
+      brand: brand || detectBrand(url),
+      price: cleanPrice,
+      images: images.length > 0 ? images : null,
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      rating: '4.8',
+      reviewsCount: 42,
+      source: 'live-scrape'
+    });
+
+  } catch (err) {
+    console.log(`Scraper fallback triggered for: ${url} (${err.message})`);
+    const parsedData = fallbackUrlParser(url);
+    res.json({
+      success: true,
+      ...parsedData,
+      source: 'url-fallback'
+    });
+  }
+});
+
 // 5. GET Automated Scraped Closet (Myntra FWD and Flipkart storefronts)
 app.get('/api/automated-closet', async (req, res) => {
   const myntraUrl = 'https://www.myntra.com/shop/fwd-women';
@@ -402,7 +631,17 @@ app.get('/api/automated-closet', async (req, res) => {
     console.error('Flipkart crawler error:', err.message);
   }
 
-  res.json(cards);
+  // Combine crawled cards with curated Best Picks
+  let combinedCards = [...bestPicksData];
+  cards.forEach(c => {
+    // Deduplicate based on shopUrl
+    if (!combinedCards.some(cc => cc.shopUrl === c.shopUrl)) {
+      c.id = `crawled-${combinedCards.length + 1}`;
+      combinedCards.push(c);
+    }
+  });
+
+  res.json(combinedCards);
 });
 
 export default app;
